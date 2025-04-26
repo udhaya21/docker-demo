@@ -15,7 +15,7 @@ FROM base AS builder
 # Copy all necessary files to build the app
 COPY . .
 
-# Build the frontend (simulate a Webpack/Turbopack build)
+# Build the frontend
 RUN npm run build
 
 # Stage 3: Production image (runtime)
