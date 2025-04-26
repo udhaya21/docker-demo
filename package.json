@@ -2,8 +2,8 @@
     "name": "web-build-docker-demo",
     "version": "1.0.0",
     "scripts": {
-      "build": "echo 'Building...' && mkdir -p build && cp -r public/* build/",
-      "start": "node build/index.js"
+        "build": "echo 'Building...' && mkdir -p build && cp -r public/* build/ && cp src/index.js build/",
+        "start": "node build/index.js"
     },
     "dependencies": {
       "express": "^4.18.2"
